@@ -1,0 +1,33 @@
+/* some elements have default margin hence it has to be cleared. Use the all selector (*) to select the whole body of the website to clear all the default margins that comes with the element */
+*{
+    margin: 0;
+}
+#logo {
+    /* resize the logo */
+    width: 200px;
+    /* height: 100px; */
+}
+nav {
+    /* flex direction sets your items in a row by default so no need to specify  */
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    padding: 20px 60px;
+    background-attachment: white;
+    /* to make the varBar fixed when scrolling on the website */
+    /* position: fixed;
+    width: 100vw; */
+}
+#nav-links {
+    display: flex;
+    column-gap: 20px;
+}
+nav button {
+    background-color: white;
+    padding: 10px 20px;
+    /* fit content means take the height of the things within you */
+    height: fit-content;
+    /* border-color: rgb(155, 67, 238); */
+    /* default border width hence you have to specify your preference */
+    border: 2px solid rgb(155, 67, 238);
+}
