@@ -2,6 +2,45 @@
 *{
     margin: 0;
 }
+
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.baskervville-regular {
+    font-family: "Baskervville", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+#tiny-bar{
+    background-color: #A822E1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tiny-bar_text{
+    display: flex;
+}
+.tiny-bar_text a {
+    display: flex;
+    text-decoration: none;
+    font-family: ;
+}
+.social-icons{
+    display: flex;
+}
+.social-icons img {
+    font-size: 10px;
+}
 #logo {
     /* resize the logo */
     width: 200px;
@@ -30,4 +69,10 @@ nav button {
     /* border-color: rgb(155, 67, 238); */
     /* default border width hence you have to specify your preference */
     border: 2px solid rgb(155, 67, 238);
+}
+#hero {
+    background-image: url(../assets/images/hero.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-size: 100% 100%;
 }
