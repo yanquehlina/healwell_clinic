@@ -3,6 +3,12 @@
     margin: 0;
 }
 
+body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
 .roboto-light {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
@@ -22,10 +28,11 @@
   }
   
 #tiny-bar{
-    background-color: #A822E1;
+    background-color: #C56AEB;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 30px;
 }
 .tiny-bar_text{
     display: flex;
@@ -33,7 +40,14 @@
 .tiny-bar_text a {
     display: flex;
     text-decoration: none;
-    font-family: ;
+    font-size: 12px;
+    color: white;
+    margin-left: 10px;
+}
+#tiny-bar_line {
+    margin-left: 15px;
+    font-size: 15px;
+    color: white;
 }
 .social-icons{
     display: flex;
@@ -53,9 +67,13 @@ nav {
     justify-content: space-between;
     padding: 20px 60px;
     background-attachment: white;
+    background-color: rgba(51, 51, 51, 0.5);
+    /* background-color: white; */
     /* to make the varBar fixed when scrolling on the website */
-    /* position: fixed;
-    width: 100vw; */
+    position: fixed;
+    width: 100vw;
+    height: 40px;
+    
 }
 #nav-links {
     display: flex;
@@ -75,4 +93,28 @@ nav button {
     width: 100vw;
     height: 100vh;
     background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.hero-overlay {
+    display: flex;
+    flex-direction: column;
+    column-gap: 10%;
+    align-items: center;
+    text-align: justify;
+    padding-top: 18%;
+}
+.row{
+    display: flex;
+}
+ 
+.experience-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 120px;
+    position: relative;
+}
+.experience-img img{
+    width:450px;
+    height: 550px;
 }
